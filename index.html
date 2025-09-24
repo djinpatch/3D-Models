@@ -80,7 +80,8 @@
       card.innerHTML = `
         <h2 id="${key}">${TITLES[key] || key}</h2>
         <model-viewer src="${glb}" alt="${key} model"
-          camera-controls auto-rotate exposure="1.0" shadow-intensity="0.5">
+          camera-controls auto-rotate exposure="1.0" shadow-intensity="0.5"
+          disable-backfaces disable-occlusion>
         </model-viewer>
         <div class="legend-wrap">
           <img class="legend" src="${png}" alt="${key} colorbar">
